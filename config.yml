@@ -1,0 +1,6 @@
+prometheusAgent:
+  configPath: /etc/prometheus/prometheus.yml
+  reloadEndpoint: http://127.0.0.1:9090/-/reload
+blackboxAgent:
+  configPath: /etc/blackbox_exporter/blackbox.yml
+  reloadEndpoint: http://127.0.0.1:8081/-/reload
