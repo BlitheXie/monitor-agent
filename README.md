@@ -6,7 +6,23 @@
 2. Agent使用与Prometheus和Blackbox Exporter相同的yml文件解析库，避免由于库的不同而导致解析失败  
 3. Agent屏蔽修改yml文件细节，只需提供必要的参数，便于解耦  
 4. Monitor机器配置较低，而Go资源占用比Java低，写Agent有优势  
-## 使用
-默认配置文件/etc/monitor-agent/config.yml，可用`--config`指定
-默认端口8080，可用`--port`指定
-
+## 使用  
+默认配置文件/etc/monitor-agent/config.yml，可用`--config`指定  
+默认端口8080，可用`--port`指定  
+## 例子  
+添加/修改prober  
+```
+PUT /prober
+{
+    "uniqueName": "#UNIQUE_PROBER_NAME#",
+    "method": "POST",
+    "basicAuth": {
+        "username": "user1",
+        "password": "pwd1"
+    },
+    "body": "{\"test\":1}",
+    "headers":{
+        "Content-Type": "application/json"
+    }
+}
+```
