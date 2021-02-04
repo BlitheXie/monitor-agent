@@ -26,12 +26,12 @@ PUT /prober
     }
 }
 ```
-删除prober
+删除prober  
 ```
 DELETE /prober?uniqueName=#UNIQUE_PROBER_NAME#
 ```
-添加/修改scape job
-env和systemAlertID是自定义label，无实际作用
+添加/修改scape job  
+env和systemAlertID是自定义label，无实际作用  
 ```
 PUT /scrapeJob
 {
@@ -42,7 +42,7 @@ PUT /scrapeJob
     "systemAlertID": "test-system-id"
 }
 ```
-删除scrape job
+删除scrape job  
 ```
 DELETE /scrapeJob?uniqueName=#UNIQUE_JOB_NAME#
 ```
