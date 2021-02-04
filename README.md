@@ -1,1 +1,1 @@
-# Prometheus和Blackbox Exporter的配置生成代理  
+# Prometheus和Blackbox Exporter的配置生成工具  
